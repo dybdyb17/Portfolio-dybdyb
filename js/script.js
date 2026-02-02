@@ -71,7 +71,8 @@ function tabsFilters() {
 
       console.log("tutu")
 
-      filter !== elem ? projet.parentNode.classList.add("hide") : projet.parentNode.classList.remove("hide")
+      // Vérifie si la catégorie contient le filtre (pour gérer les catégories multiples comme "web uiux")
+      filter.includes(elem) ? projet.parentNode.classList.remove("hide") : projet.parentNode.classList.add("hide")
     })
   }
 
