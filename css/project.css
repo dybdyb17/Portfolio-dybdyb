@@ -1,0 +1,231 @@
+/* Styles spécifiques pour les pages de projet */
+
+.project-page {
+    padding: 6rem 0;
+    background-color: var(--background-body);
+  }
+  
+  .project-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .project-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-body);
+  }
+  
+  .project-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.4rem;
+    color: #777;
+  }
+  
+  .project-category {
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .project-category::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #547892;
+    margin: 0.5rem auto;
+  }
+  
+  .project-date {
+    font-weight: 500;
+  }
+  
+  .project-showcase {
+    margin-bottom: 4rem;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .project-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .project-description {
+    margin-bottom: 3rem;
+  }
+  
+  .project-description h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-body);
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  
+  .project-description h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #547892;
+  }
+  
+  .project-description p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: left;
+  }
+  
+  .project-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .project-details {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .detail-section {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .dark-mode .detail-section {
+    background-color: #333;
+  }
+  
+  .detail-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-body);
+    position: relative;
+    padding-bottom: 0.8rem;
+  }
+  
+  .detail-section h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #547892;
+  }
+  
+  .detail-section p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+  
+  .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tech-list li {
+    background-color: #547892;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  
+  .project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn svg {
+    margin-right: 0.8rem;
+  }
+  
+  .btn-primary {
+    background-color: #547892;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3a5368;
+  }
+  
+  .btn-secondary {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .dark-mode .btn-secondary {
+    background-color: #444;
+    color: #fff;
+    border-color: #555;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #eee;
+  }
+  
+  .dark-mode .btn-secondary:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .project-title {
+      font-size: 2.8rem;
+    }
+  
+    .project-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  
